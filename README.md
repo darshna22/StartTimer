@@ -5,10 +5,12 @@ implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01'
 
 ## Activity Code
 
+
    class MainActivity : AppCompatActivity() {
    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
         setContentView(R.layout.activity_main)
         val viewModel = ViewModelProvider(this).get(CountDownViewModel::class.java)
         bt_start_timer.setOnClickListener { viewModel.starTimer() }
@@ -48,8 +50,7 @@ implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01'
     fun stopTimer() {
         job.cancel()
     }
-
 }
 
 ## APP Snapshots:
-<img src="app/img/1.png" width="300" height="600">
+<img src="app/img/i.png" width="300" height="600">
