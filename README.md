@@ -48,7 +48,8 @@ implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01'
     }
 
     fun stopTimer() {
-        job.cancel()
+        if(job.isInitialized)
+         job.cancel()
     }
 }
 
