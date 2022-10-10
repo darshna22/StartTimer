@@ -4,6 +4,7 @@
 implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01'
 
 ## Activity Code
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,5 +49,4 @@ class CountDownViewModel : ViewModel() {
 }
 
 ## APP Snapshots:
-<img src="app/img/1.png" width="300" height="600">     <img src="app/doc/2.png" width="300" height="600">   <img src="app/doc/3.png" width="300" height="600">
-
+<img src="app/img/1.png" width="300" height="600">
