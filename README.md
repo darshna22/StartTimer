@@ -5,7 +5,7 @@ implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01'
 
 ## Activity Code
 
-class MainActivity : AppCompatActivity() {
+   class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
 ## CountDownViewModel which have start and stop timer code
 
-class CountDownViewModel : ViewModel() {
+   class CountDownViewModel : ViewModel() {
     private var _countValue = MutableLiveData<Int>(0)
     val countValue: LiveData<Int>
         get() = _countValue
