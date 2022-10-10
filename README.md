@@ -6,10 +6,10 @@ implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01'
 ## Activity Code
 
    class MainActivity : AppCompatActivity() {
+   
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         val viewModel = ViewModelProvider(this).get(CountDownViewModel::class.java)
         bt_start_timer.setOnClickListener { viewModel.starTimer() }
         bt_stop_timer.setOnClickListener { viewModel.stopTimer() }
@@ -25,9 +25,12 @@ implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01'
 ## CountDownViewModel which have start and stop timer code
 
    class CountDownViewModel : ViewModel() {
+   
     private var _countValue = MutableLiveData<Int>(0)
+    
     val countValue: LiveData<Int>
         get() = _countValue
+        
     private lateinit var job: Job
 
 
