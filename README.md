@@ -1,4 +1,4 @@
-# MoveInSync TimerProject
+# Start and Stop Timer Project
 
 ## Dependancy reuired in  app build.gradle
 implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01'
